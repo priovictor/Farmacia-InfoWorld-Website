@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;800&display=swap");
+
+:root{
+    --fontglobal: "Sarabun", sans-serif;
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#logo{
+    display: block;
+    width: 250px;
+    
+    border-radius: 30px;
+    border: solid var(--colorfirst) 3px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-indent: 100px;
+    /* text-transform: uppercase; */
+    padding: 10px 0;
+}
+
+p{
+    font-size: 25px;
+    font-family: var(--fontglobal);
+    text-align: justify;
+    text-indent: 100px;
+    line-height: 1.5;
+}
+
+.info-world-pharmacy{
+    color: #209623;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 0;
+    margin-top: 20px; /**The distance between footer and the upper objects */
+    width: 100%;
+    background-color: var(--colorfirst);
+}
+
+footer p{
+    font-family: var(--fontglobal);
+    font-size: 20px;
+    text-align: center;
+    text-transform: none;
+    color: #209623;
+    padding: 3px;
+}

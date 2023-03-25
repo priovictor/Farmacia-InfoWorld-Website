@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;800&display=swap");
+
+:root{
+    --colorfirst: #209623;
+    --colorsecond: #ffffff;
+    --fontglobal: "Sarabun", sans-serif;
+}
+
+#small-logo{
+    width: 150px;
+}
+
+.container-fluid{
+    margin: auto;
+    width: 90%;
+}
+
+.nav-item a{
+    /* font-family: var(--fontglobal); */
+    font-size: 25px;
+    padding: 10px 40px;
+    margin: auto 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    color: #209623;
+}
+
+.nav-item a:hover{
+    color: #ffffff;
+    background-color: #209623;
+    transition-duration: 0.1s;
+}
+
+.nav-item a:active{
+    color: #209623;
+    background-color: #ffffff;
+    transition-duration: 0.1s;
+}
