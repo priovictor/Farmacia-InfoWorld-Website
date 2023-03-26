@@ -21,9 +21,14 @@ import { UpdatePatientsComponent } from './management-patients/update-patients/u
 const routes: Routes = [
   {
     component: HomeComponent,
+    path:'',
+  },
+  {
+    component: HomeComponent,
     path:'home',
   },
   // Managements Routing
+
   {
     component: ManagementPatientsComponent,
     path:'management-patients',
@@ -38,58 +43,64 @@ const routes: Routes = [
   },
 
   //Routing for Management of Patients
-  {
-    component: ListPatientsComponent,
-    path:'management-patients/list-patients',
-  },
-  {
-    component: AddPatientsComponent,
-    path:'management-patients/add-patients',
-  },
-  {
-    component: UpdatePatientsComponent,
-    path:'management-patients/update-patients',
-  },
-  {
-    component: DeletePatientsComponent,
-    path:'management-patients/delete-patients',
-  },
+  { path: 'management-patients', children:[
+    {
+      component: ListPatientsComponent,
+      path:'list-patients',
+    },
+    {
+      component: AddPatientsComponent,
+      path:'add-patients',
+    },
+    {
+      component: UpdatePatientsComponent,
+      path:'update-patients',
+    },
+    {
+      component: DeletePatientsComponent,
+      path:'delete-patients',
+    }
+  ]},
 
   //Routing for Management of Medicines
+  { path: 'management-medicines', children:[
   {
     component: ListMedicinesComponent,
-    path:'management-medicines/list-medicines',
+    path:'list-medicines',
   },
   {
     component: AddMedicinesComponent,
-    path:'management-medicines/add-medicines',
+    path:'add-medicines',
   },
   {
     component: UpdateMedicinesComponent,
-    path:'management-medicines/update-medicines',
+    path:'update-medicines',
   },
   {
     component: DeleteMedicinesComponent,
-    path:'management-medicines/delete-medicines',
-  },
+    path:'delete-medicines',
+  }
+]},
 
   //Routing for Management of Orders
+  { path: 'management-orders', children:[
   {
     component: ListOrdersComponent,
-    path:'management-orders/list-orders',
+    path:'list-orders',
   },
   {
     component: AddOrdersComponent,
-    path:'management-orders/add-orders',
+    path:'add-orders',
   },
   {
     component: UpdateOrdersComponent,
-    path:'management-orders/update-orders',
+    path:'update-orders',
   },
   {
     component: DeleteOrdersComponent,
-    path:'management-orders/delete-orders',
+    path:'delete-orders',
   }
+]}
 ];
 
 @NgModule({

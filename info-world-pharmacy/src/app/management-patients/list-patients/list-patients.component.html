@@ -1,1 +1,36 @@
-<p>list-patients works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+    <table class="table table-hover table-striped" >
+        <thead>
+          <tr>
+            <th scope="col">ID Patient</th>
+            <th scope="col">Name of Patient</th>
+            <th scope="col">CNP</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Home Address</th>
+            <th scope="col">Work Address</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let patient of collection">
+            <td >{{patient.id_patient}}</td>
+            <td>{{patient.name_of_patience}}</td>
+            <td>{{patient.cnp}}</td>
+            <td>{{patient.phone}}</td>
+            <td>{{patient.address_home}}</td>
+            <td>{{patient.address_work}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+</body>
+</html>

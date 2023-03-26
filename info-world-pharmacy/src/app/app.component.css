@@ -10,9 +10,13 @@
     width: 150px;
 }
 
-.container-fluid{
-    margin: auto;
-    width: 90%;
+#navbarNav{
+    width: 100%;
+}
+
+.navbar-nav{
+    margin: 5px auto;
+
 }
 
 .nav-item a{
@@ -24,6 +28,7 @@
     letter-spacing: 3px;
     border-radius: 20px;
     color: #209623;
+    text-align: center;
 }
 
 .nav-item a:hover{

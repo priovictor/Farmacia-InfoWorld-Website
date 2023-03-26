@@ -1,5 +1,5 @@
 {
-    "patient": [
+    "patients": [
       { "id_patient": 1000, "name_of_patience": "Docan Daniel", "cnp": "5000316407986", "phone": "0722870138", 
         "address_home": "Street Trandafirului, Number 10", "address_work": "Street Brasovului, Number 8"}, 
 
@@ -33,7 +33,7 @@
       {"id_patient": 1010, "name_of_patience": "Tugui Vasilica", "cnp": "6011112405836", "phone": "0725465338", 
         "address_home": "Street Zambaccian, Number 84", "address_work": "Street Andrei Mureșanu, Number 21"}
     ],
-    "medicine":[
+    "medicines":[
       {"id_medicine": 2000, "name_of_medicine":"PARACETAMOL", "weight": "100g", "shape": "sphere", 
       "description": "Recomended pill", "quantity": 120},
       {"id_medicine": 2001, "name_of_medicine":"FLUOROURACILUM", "weight": "106g", "shape": "sphere", 
@@ -57,7 +57,7 @@
       {"id_medicine": 2010, "name_of_medicine":"ARANESP", "weight": "127g", "shape": "sphere", 
       "description": "Good reviews pill", "quantity": 130}
     ],
-    "order":[
+    "orders":[
         {"id_order": 3000, "name_of_patience":"Girtu Mihai", "address": "Street Argentina, Number 23", 
         "name_of_medicine": "ARANESP", "description": "Fast Delivery", "quantity": 8},
         {"id_order": 3001, "name_of_patience":"Docan Daniel", "address": "Street Brasovului, Number 8", 

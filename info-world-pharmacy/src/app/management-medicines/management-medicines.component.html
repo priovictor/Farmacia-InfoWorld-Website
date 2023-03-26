@@ -1,1 +1,34 @@
-<p>management-medicines works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="bk-nav">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="list-medicines">List Medicines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="add-medicines">Add Medicines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="update-medicines">Update Medicines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="delete-medicines">Delete Medicines</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+</body>
+</html>

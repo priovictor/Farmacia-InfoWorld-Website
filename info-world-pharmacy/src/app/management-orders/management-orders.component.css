@@ -1,0 +1,40 @@
+#small-logo{
+    width: 150px;
+}
+
+.container-fluid{
+    margin: auto;
+    width: 90%;
+}
+
+#bk-nav{
+    background-color: #f0fff3;
+}
+
+.navbar-nav{
+    margin: auto;
+}
+
+.nav-item a{
+    /* font-family: var(--fontglobal); */
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: auto 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    color: #209623;
+    text-align: center;
+}
+
+.nav-item a:hover{
+    color: #ffffff;
+    background-color: #209623;
+    transition-duration: 0.1s;
+}
+
+.nav-item a:active{
+    color: #209623;
+    background-color: #ffffff;
+    transition-duration: 0.1s;
+}

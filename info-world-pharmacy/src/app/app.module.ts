@@ -19,6 +19,7 @@ import { ListPatientsComponent } from './management-patients/list-patients/list-
 import { AddPatientsComponent } from './management-patients/add-patients/add-patients.component';
 import { UpdatePatientsComponent } from './management-patients/update-patients/update-patients.component';
 import { DeletePatientsComponent } from './management-patients/delete-patients/delete-patients.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { DeletePatientsComponent } from './management-patients/delete-patients/d
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
