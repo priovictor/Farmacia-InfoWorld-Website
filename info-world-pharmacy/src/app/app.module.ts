@@ -20,6 +20,7 @@ import { AddPatientsComponent } from './management-patients/add-patients/add-pat
 import { UpdatePatientsComponent } from './management-patients/update-patients/update-patients.component';
 import { DeletePatientsComponent } from './management-patients/delete-patients/delete-patients.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

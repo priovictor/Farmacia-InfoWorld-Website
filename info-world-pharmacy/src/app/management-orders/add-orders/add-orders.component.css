@@ -1,0 +1,28 @@
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #209623;
+    letter-spacing: 3px;
+}
+
+.btn{
+    background-color: #209623;
+    border-color: #209623;
+    font-size: larger;
+}
+
+.btn:hover{
+    background-color: #005c03;
+    border-color: #005c03;
+    transition-duration: 0.1s;
+}
+
+.btn:active{
+    background-color: #209623;
+    border-color: #209623;
+    transition-duration: 0.1s;
+}
+
+.alert{
+    margin: 20px 0px;
+}

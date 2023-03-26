@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 <body>
-
+  
 <div class="container">
+    <h3>Table of Patients</h3>
     <table class="table table-hover table-striped" >
         <thead>
           <tr>
@@ -17,6 +19,7 @@
             <th scope="col">Phone</th>
             <th scope="col">Home Address</th>
             <th scope="col">Work Address</th>
+            <th scope="col">Delete</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -27,6 +30,10 @@
             <td>{{patient.phone}}</td>
             <td>{{patient.address_home}}</td>
             <td>{{patient.address_work}}</td>
+            <td>
+              <i (click)="deletePatient(patient.id_patient)" id="trash"
+                  class="fa fa-trash" style="font-size:30px;color:red;"></i>
+            </td>
           </tr>
         </tbody>
       </table>

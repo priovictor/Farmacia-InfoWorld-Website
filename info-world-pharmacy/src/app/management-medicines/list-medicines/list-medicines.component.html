@@ -1,1 +1,43 @@
-<p>list-medicines works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Table of Medicines</h3>
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID Medicine</th>
+          <th scope="col">Name of Medicine</th>
+          <th scope="col">Weight</th>
+          <th scope="col">Shape</th>
+          <th scope="col">Description</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr *ngFor="let medicine of collection">
+          <td>{{medicine.id_medicine}}</td>
+          <td>{{medicine.name_of_medicine}}</td>
+          <td>{{medicine.weight}}</td>
+          <td>{{medicine.shape}}</td>
+          <td>{{medicine.description}}</td>
+          <td>{{medicine.quantity}}</td>
+          <td>
+            <i (click)="deleteMedicine(medicine.id_medicine)"  id="trash"
+                class="fa fa-trash" style="font-size:30px;color:red;"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

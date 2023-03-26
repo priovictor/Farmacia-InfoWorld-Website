@@ -17,4 +17,11 @@ export class ListPatientsComponent implements OnInit{
       this.collection = patientsList;
     })
   }
+
+  deletePatient(patient: any)
+  {
+    this.patients.deletePatient(patient).subscribe((data)=>{
+        console.warn("Data", data);
+    })
+  }
 }
